@@ -31,8 +31,8 @@ while True:
  c.send(str(l[i:st]).encode())
  ack=c.recv(1024).decode()
  if ack:
- print(ack)
- i+=s
+  print(ack)
+  i+=s
 ```
 ### Client
 ```
