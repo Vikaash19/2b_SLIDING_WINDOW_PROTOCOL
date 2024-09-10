@@ -13,7 +13,7 @@ To write a python program for Implementation of sliding Window Protocol.
 6. Stop the Program
 7. 
 ## PROGRAM:
-### Server
+### Client
 ```
 import socket
 s=socket.socket()
@@ -27,14 +27,14 @@ st=0
 i=0
 while True:
  while(i<len(l)):
- st+=s
- c.send(str(l[i:st]).encode())
- ack=c.recv(1024).decode()
- if ack:
-  print(ack)
-  i+=s
+  st+=s
+  c.send(str(l[i:st]).encode())
+  ack=c.recv(1024).decode()
+  if ack:
+   print(ack)
+   i+=s
 ```
-### Client
+### Server
 ```
 import socket
 s=socket.socket()
@@ -46,9 +46,10 @@ while True:
 <br> <br> <br>
 ## OUPUT:
 ### Client
+![exp 2b client](https://github.com/user-attachments/assets/813b2b66-c154-47ae-ba05-a558b811eaf5)
 
 ### Server
-
+![exp 2b server ](https://github.com/user-attachments/assets/d51d24a4-9ead-4fe9-bd5b-180d4e245f56)
 
 ## RESULT
 Thus, python program to perform stop and wait protocol was successfully executed
