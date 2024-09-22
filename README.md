@@ -52,4 +52,4 @@ while True:
 ![exp 2b server ](https://github.com/user-attachments/assets/d51d24a4-9ead-4fe9-bd5b-180d4e245f56)
 
 ## RESULT
-Thus, python program to perform stop and wait protocol was successfully executed
+Thus, python program to perform sliding window protocol was successfully executed
