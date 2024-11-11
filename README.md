@@ -18,6 +18,15 @@ To write a python program for Implementation of sliding Window Protocol.
 ```
 import socket
 s=socket.socket()
+s.connect(('localhost',8000))
+while True: 
+ print(s.recv(1024).decode())
+ s.send("acknowledgement recived from the server".encode())
+```
+### Server
+```
+import socket
+s=socket.socket()
 s.bind(('localhost',8000))
 s.listen(5)
 c,addr=s.accept()
@@ -34,15 +43,6 @@ while True:
   if ack:
    print(ack)
    i+=s
-```
-### Server
-```
-import socket
-s=socket.socket()
-s.connect(('localhost',8000))
-while True: 
- print(s.recv(1024).decode())
- s.send("acknowledgement recived from the server".encode())
 ```
 <br> <br> <br>
 ## OUPUT:
